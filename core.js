@@ -45,6 +45,7 @@
     //     document.getElementsByClassName("AppHeader-userInfo")[0].style.visibility = 'hidden'
     // }
 
+    //不显示消息提示和别的，但显示个人入口
     if (document.getElementsByClassName("AppHeader-notifications")[0] != null) {
         document.getElementsByClassName("AppHeader-notifications")[0].style.visibility = 'hidden'
     }
@@ -60,20 +61,29 @@
     if (searchSide != null) {
         searchSide.parentNode.removeChild(searchSide);
     }
-    var search = document.getElementById("Popover1-toggle");
-    if(search!=null){
-        search.setAttribute("placeholder","")
-        //监听focus事件
-        search.onfocus = function () {
-            //去除搜索提示，提示中包含了热榜
-            search.setAttribute("placeholder","")
-            var body = document.getElementsByTagName("body")[0];
-            var lst = body.lastElementChild;
-            // alert(lst.nodeName);
-            lst.parentNode.removeChild(lst);
-        }
 
+    //定时器去除placeholder
+    var clock = function() {
+        var search = document.getElementById("Popover1-toggle");
+        var search2 = document.getElementById("Popover2-toggle");
+        if(search!=null){
+            search.setAttribute("placeholder","")
+            window.requestAnimationFrame(clock);
+        }
+        if(search2!=null){
+            search2.setAttribute("placeholder","")
+            window.requestAnimationFrame(clock);
+        }
     }
+
+
+    var requestId = window.requestAnimationFrame(clock);
+
+
+    document.styleSheets[0].insertRule('.SearchBar-topSearchItem {display: none!important}', 0);
+    document.styleSheets[0].insertRule('.WikiBox{display:none!important;}', 0);
+    document.styleSheets[0].insertRule('.CornerButtons{display:none!important;}', 0);
+    document.styleSheets[0].insertRule('.KfeCollection-PcCollegeCard-root{display:none!important;}', 0);
 
 
     //问题详情页面
