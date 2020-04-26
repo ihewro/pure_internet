@@ -1,0 +1,81 @@
+
+/*全站*/
+.Topstory {
+    visibility: hidden!important;
+}
+
+.TopstoryPageHeader-main {
+    visibility: hidden!important;
+}
+
+.AppHeader-Tabs {
+    visibility: hidden!important;
+}
+.AppHeader-notifications {
+    visibility: hidden!important;
+}
+.AppHeader-messages {
+    visibility: hidden!important;
+}
+.SearchBar-topSearchItem {
+    display: none!important;
+}
+.WikiBox {
+    display: none!important;
+}
+.CornerButtons {
+    display: none!important;
+}
+.KfeCollection-PcCollegeCard-root {
+    visibility: hidden!important;
+}
+
+.SearchSideBar{
+    display: none;
+}
+
+.Question-sideColumn{
+    display: none;
+}
+.SearchMain{
+    width: 100%;
+}
+
+.Question-mainColumn{
+    width: 100%;
+}
+/*去除用户推荐*/
+div[data-za-detail-view-path-module="UserItem"]{
+    display: none;
+}
+/*去除推荐的话题*/
+div[data-za-detail-view-path-module="TopicItem"]{
+    display: none;
+}
+/*div[data-za-detail-view-path-module="AnswerItem"]{*/
+/*    display: none;*/
+/*}*/
+
+
+
+
+/*首页*/
+
+body{
+    /*background: #fff;*/
+    /*overflow: hidden;;*/
+}
+
+.AppHeader-inner{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 35%;
+    box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
+    background: #fff;
+}
+
+/*.is-hidden .AppHeader-inner{*/
+/*    display: none;*/
+/*}*/
