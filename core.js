@@ -41,9 +41,19 @@
         document.getElementsByClassName("AppHeader-Tabs")[0].style.visibility = 'hidden'
     }
     //不显示用户信息
-    if (document.getElementsByClassName("AppHeader-userInfo")[0] != null) {
-        document.getElementsByClassName("AppHeader-userInfo")[0].style.visibility = 'hidden'
+    // if (document.getElementsByClassName("AppHeader-userInfo")[0] != null) {
+    //     document.getElementsByClassName("AppHeader-userInfo")[0].style.visibility = 'hidden'
+    // }
+
+    if (document.getElementsByClassName("AppHeader-notifications")[0] != null) {
+        document.getElementsByClassName("AppHeader-notifications")[0].style.visibility = 'hidden'
     }
+
+    if (document.getElementsByClassName("AppHeader-messages")[0] != null) {
+        document.getElementsByClassName("AppHeader-messages")[0].style.visibility = 'hidden'
+    }
+
+
 
     //搜索框去掉提示和热榜
     var searchSide = document.getElementsByClassName("SearchSideBar")[0];
