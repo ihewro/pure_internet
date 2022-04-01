@@ -9,14 +9,21 @@
 - 知乎 
   - https://userstyles.world/style/3942/pure-zhihu
   - https://openuserjs.org/scripts/he_wro/%E5%8E%BB%E9%99%A4%E7%9F%A5%E4%B9%8E%E5%B9%B2%E6%89%B0
+  
 - 豆瓣
   - https://userstyles.world/style/3941/pure-douban
+
 - 抖音
+
   - https://userstyles.world/style/3943/pure-douyin
 
+- 微博
+  - 	https://userstyles.world/style/3944/pure-weibo
 
 
-## 样例
+
+## 截图
 
 ![首页](./img/main.png)
 
+![首页](./img/weibo.png)
